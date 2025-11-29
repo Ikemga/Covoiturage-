@@ -1,8 +1,8 @@
 /* Definition des couleur */
 :root{
---color-menu:#00AEEF;
---color-menu-focus:#72c6f0;
---bg-color-menu: #ffffff;
+    --color-menu:#00AEEF;
+    --color-menu-focus:#72c6f0;
+    --bg-color-menu: #ffffff;
 }
 /* Définition de police */
 
@@ -110,7 +110,8 @@ header{
 
 .welcome_container .welcome_p{
     color: rgb(0, 0, 0);
-    font-weight: bold;
+
+    
 }
 .welcome_container button{
     font-family: "GT Eesti", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
@@ -187,7 +188,7 @@ header{
     margin: 5px;
 }
 .lieu_container label{
-    font-weight: bold;
+    font-weight:lighter;
 }
 .dep i{
     color: #05842d;
@@ -356,4 +357,36 @@ form button:focus{
     border: none;
     border-radius: 0px 10px 10px 0px;
     color: white;
+}
+/* Page d'inscription */
+
+.inscription_container{
+    text-align: center;
+    width: 30%;
+    margin: 10px auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.logo i{
+    background-color: var(--color-menu);
+    border-radius: 50%;
+    padding: 20px;
+    color: var(--bg-color-menu);
+}
+
+.inscrire h2{
+    color: var(--color-menu);
+    font-size: 2rem;
+}
+
+.inscrire p{
+    color: rgb(160, 161, 161);
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.formulaire{
+
 }
