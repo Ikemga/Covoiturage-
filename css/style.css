@@ -249,3 +249,111 @@ footer p{
     color: var(--bg-color-menu);
     font-weight: bold;
 }
+
+.search_container form{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    width:fit-content;
+    margin: 0 auto;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
+}
+.date_container input{
+    border: none;
+    border-radius: 10px;
+    border-right: 2px solid rgb(160, 161, 161);
+    padding: 10px;
+    margin: 2px;
+}
+
+.date_container input:hover{
+    background-color: rgb(231, 235, 235);
+    border: none;
+    border-radius: 10px;
+    border-right: 2px solid rgb(160, 161, 161);
+    padding: 10px;
+}
+.date_container input:focus{
+    background-color: rgb(236, 238, 238);
+    border: none;
+    outline: none;
+    
+}
+
+/*  */
+
+.depart_container input{
+    border: none;
+    border-radius: 10px;
+    border-right: 2px solid rgb(160, 161, 161);
+    padding: 10px;
+    margin: 2px;
+}
+
+.depart_container input:hover{
+    background-color: rgb(231, 235, 235);
+    border: none;
+    border-radius: 10px;
+    border-right: 2px solid rgb(160, 161, 161);
+    padding: 10px;
+}
+.depart_container input:focus{
+    background-color: rgb(236, 238, 238);
+    border: none;
+    outline: none;
+    
+}
+
+/*  */
+
+.destiny_container input{
+    border: none;
+    border-radius: 10px;
+    border-right: 2px solid rgb(160, 161, 161);
+    padding: 10px;
+    margin: 2px;
+}
+
+.destiny_container input:hover{
+    background-color: rgb(231, 235, 235);
+    border: none;
+    border-radius: 10px;
+    border-right: 2px solid rgb(160, 161, 161);
+    padding: 10px;
+}
+.destiny_container input:focus{
+    background-color: rgb(236, 238, 238);
+    border: none;
+    outline: none;
+    
+}
+
+/*  */
+
+form button{
+    background-color:var(--color-menu);
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
+    border: var(--color-menu) 2px solid;
+    color: white;
+}
+
+form button:hover{
+    background-color:var(--color-menu-focus);
+    font-weight: bold;
+    border-radius: 0px 10px 10px 0px;
+    color: var(--bg-color-menu);
+    padding: 10px;
+    border: var(--color-menu-focus) 2px solid;
+}
+
+form button:focus{
+    background-color:#048fc1;
+    font-weight: bold;
+    border: none;
+    border-radius: 0px 10px 10px 0px;
+    color: white;
+}
