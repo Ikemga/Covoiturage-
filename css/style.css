@@ -1,0 +1,251 @@
+/* Definition des couleur */
+:root{
+--color-menu:#00AEEF;
+--color-menu-focus:#72c6f0;
+--bg-color-menu: #ffffff;
+}
+/* Définition de police */
+
+@font-face {
+    font-family: "GT Eesti";
+    src: url("font/GT-Eesti-Display-Medium-Trial.otf") format("otf");
+    src: url("font/GT-Eesti-Display-UltraBold-Italic-Trial.otf") format("otf");
+    src: url("font/GT-Eesti-Display-Bold-Trial.otf") format("otf");
+}
+
+/* Style général */
+body{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: "GT Eesti", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color:var(--bg-color-menu);
+    color: var(--color-menu);
+    border-bottom: var(--color-menu) 2px solid;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    /*box-shadow: 0 4px rgba(0,0,0,0.1);*/
+}
+
+.header_container{
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_container h2{
+    padding:0px 0px 0px 5px;
+    color: black;
+    font-weight: bold;
+}
+
+.header_container h2 i{
+    color:var(--color-menu);
+    margin-right: 5px;
+}
+.header_container nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header_container nav ul li{
+    padding-right: 10px;
+    list-style: none;
+}
+
+.header_container nav ul li a{
+    text-decoration: none;
+    background-color:var(--color-menu);
+    font-weight: bold;
+    border-radius: 10px;
+    padding:6px;
+    color: white;
+    border: var(--color-menu) 2px solid;
+}
+
+.header_container nav ul li a:hover{
+    background-color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    color: var(--color-menu);
+    
+}
+
+.header_container nav ul li a:focus{
+    background-color:var(--color-menu-focus);
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    border: var(--color-menu-focus) 2px solid;
+}
+
+/* Welcome text */
+
+.welcome_section{
+    text-align: center;
+    background-image:
+    linear-gradient(rgba(0, 174, 239, 0.7), rgba(255,255,255,0.5)),
+    url(../image/wel1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover; /* couvre toute la largeur */
+    background-position: center;
+    border-radius: 10px;
+}
+
+.welcome_container{
+    padding: 20px;
+}
+.welcome_container h2{
+    font-size: 3rem;
+    color: var(--bg-color-menu);
+    font-weight: bold;
+}
+
+.welcome_container .welcome_p{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+.welcome_container button{
+    font-family: "GT Eesti", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border: none;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: bold;
+}
+.welcome_container button a{
+    list-style: none;
+    text-decoration: none;
+    background-color: var(--color-menu);
+    color: var(--bg-color-menu);
+    padding: 10px;
+    border-radius:10px;
+}
+.welcome_container button a:focus{
+
+    background-color: var(--color-menu-focus);
+    color: var(--bg-color-menu);
+    padding: 10px;
+    border-radius:10px;
+}
+
+.welcome_container button a:hover{
+    background-color: var(--bg-color-menu);
+    color:var(--color-menu);
+    padding: 10px;
+    border-radius:10px;
+}
+/* Annonce styles */
+
+.welcome_p{
+    color: var(--bg-color-menu);
+}
+.welcome_p .all_annonce{
+    margin: 5px;
+}
+
+.all_annonce h3{
+    color: black;text-align: left;
+    font-weight: bold;
+    font-size: 2rem;
+    
+}
+
+.annonce{
+    border-bottom: rgb(160, 161, 161) 1px solid;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 5px 10px 5px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.name_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 5px 0px 10px;
+}
+
+.logo_container p{
+    background-color: var(--color-menu);
+    border-radius: 50%;
+    padding: 5px;
+    color: var(--bg-color-menu);
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.detail_container{
+    margin: 5px;
+}
+.lieu_container label{
+    font-weight: bold;
+}
+.dep i{
+    color: #05842d;
+}
+.desc i{
+    color: #fd0404;
+}
+
+.date_container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date_container{
+    color: rgb(79, 82, 82);
+}
+.date_container label{
+    color: rgb(79, 82, 82);
+    margin-right: 5px;
+}
+
+.date{
+    margin-right: 5px;
+}
+
+.prix_container{
+    margin: 10px;
+    text-align: right;
+}
+
+.prix{
+    font-size: 2rem;
+    color:#05842d ;
+    font-weight: bold;
+}
+
+.pers{
+    color: rgb(79, 82, 82);
+}
+
+.prix_container button{
+    background-color: var(--bg-color-menu);
+    border: 1px solid rgb(160, 161, 161);
+    border-radius: 10px;
+    color: rgb(79, 82, 82);
+    font-weight: bold;
+    padding: 10px;
+}
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color:black;
+    padding: 10px;
+}
+
+footer p{
+    color: var(--bg-color-menu);
+    font-weight: bold;
+}
