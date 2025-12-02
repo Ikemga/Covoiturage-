@@ -64,32 +64,24 @@ header{
 .header_container nav ul li{
     padding-right: 10px;
     list-style: none;
+    margin: 5px;
 }
 
 .header_container nav ul li a{
     text-decoration: none;
-    background-color:var(--color-menu);
     font-weight: bold;
-    border-radius: 10px;
     padding:6px;
-    color: white;
-    border: var(--color-menu) 2px solid;
+    color: var(--color-menu);
 }
 
 .header_container nav ul li a:hover{
-    background-color:white;
-    font-weight: bold;
-    border-radius: 10px;
-    color: var(--color-menu);
-    
+    padding:6px;
+    color: #063e52;
 }
-
 .header_container nav ul li a:focus{
-    background-color:var(--color-menu-focus);
+    color: var(--color-menu-focus);
     font-weight: bold;
-    border-radius: 10px;
-    color: white;
-    border: var(--color-menu-focus) 2px solid;
+
 }
 
 /* Welcome text */
@@ -119,35 +111,7 @@ header{
 
     
 }
-.welcome_container button{
-    font-family: "GT Eesti", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    border: none;
-    background-color: transparent;
-    font-size: 1rem;
-    font-weight: bold;
-}
-.welcome_container button a{
-    list-style: none;
-    text-decoration: none;
-    background-color: var(--color-menu);
-    color: var(--bg-color-menu);
-    padding: 10px;
-    border-radius:10px;
-}
-.welcome_container button a:focus{
 
-    background-color: var(--color-menu-focus);
-    color: var(--bg-color-menu);
-    padding: 10px;
-    border-radius:10px;
-}
-
-.welcome_container button a:hover{
-    background-color: var(--bg-color-menu);
-    color:var(--color-menu);
-    padding: 10px;
-    border-radius:10px;
-}
 /* Annonce styles */
 
 .welcome_p{
@@ -161,6 +125,7 @@ header{
     color: black;text-align: left;
     font-weight: bold;
     font-size: 2rem;
+    margin: 10px;
     
 }
 
@@ -174,6 +139,10 @@ header{
     padding: 10px;
 }
 
+.annonce:hover{
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.40);
+    cursor: pointer;
+}
 .name_container{
     display: flex;
     justify-content: space-between;
@@ -192,6 +161,17 @@ header{
 
 .detail_container{
     margin: 5px;
+}
+
+.lieu_container .dep{
+    margin-bottom: 10px;
+}
+
+.date_container{
+    margin-top: 10px
+}
+.date_container .date{
+    margin-right: 20px;
 }
 
 .lieu_container .dep, .desc {
@@ -366,6 +346,99 @@ form button:focus{
     border: none;
     border-radius: 0px 10px 10px 0px;
     color: white;
+}
+
+/* Contact */
+
+.contact{
+    text-align: left;
+    margin-top: 10px;
+}
+
+.contact .whatsapp{
+    margin-right: 20px;
+    color: var(--color-menu);
+}
+
+.contact .whatsapp i{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.contact .whatsapp i:hover{
+    color:var(--color-menu);
+}
+
+.contact .whatsapp i:focus{
+    color:var(--color-menu-focus);
+}
+
+.contact .telephone{
+    margin-right: 20px;
+}
+
+.contact .telephone i{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.contact .telephone i:hover{
+    color:var(--color-menu);
+}
+
+.contact .telephone i:focus{
+    color:var(--color-menu-focus);
+}
+.contact .mail{
+    margin-right: 20px;
+}
+
+
+.contact .mail i{
+    color: black;
+    font-weight: bolder;
+    font-size: 1.4rem;
+}
+.contact .mail i:hover{
+    color:var(--color-menu);
+}
+
+.contact .mail i:focus{
+    color:var(--color-menu-focus);
+}
+
+/* Message */
+
+.sms{
+    text-align: right;
+    margin: 10px;
+    align-items: center;
+}
+
+.sms button {
+    background-color: var(--bg-color-menu);
+    padding: 10px;
+    border-radius: 10px;
+    border: var(--color-menu) 1px solid;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.20);
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.sms .reserve a{
+    color: #0284b3;
+    text-decoration: none;
+}
+
+.sms .mes{
+    background-color: transparent;
+    border:none ;
+    margin-left: 10px;
+}
+
+.mes i{
+    color: var(--color-menu);
+    font-size: 2rem;
 }
 
 

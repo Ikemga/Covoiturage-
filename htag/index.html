@@ -7,6 +7,9 @@
     <!-- Lieaison avec el fichier css -->
     <link rel="stylesheet" href="../css/style.css">
 
+    <!-- Icon de de la plateforme -->
+    <link rel="icon" href="../image/log.png">
+
     <!-- FontAwersome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -15,13 +18,16 @@
     <header>
         <div class="header_container">
             <div class="title_container">
-                <h2> <i class="fa-solid fa-car-side"fa-solid fa-car-side"></i>Faso Covoiturage</h2>
+                <h2>
+                    <i class="fa-solid fa-car-side"></i>
+                    <a href="index.html">Faso Covoiturage</a>
+                </h2>
                 
             </div>
             <nav>
                 <ul>
-                    <li><a href="inscription.html">S'inscrire</a></li>
-                    <li><a href="#">Se conecter</a></li>
+                    <li><a href="Auth/inscription.html">S'inscrire</a></li>
+                    <li><a href="Auth/connexion.html">Se conecter</a></li>
                 </ul>
             </nav>
         </div>
@@ -42,11 +48,11 @@
                 </div>
                 <div class="depart_container">
                     <input type="text" name="date_R" id="date_R" placeholder="Depart">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <!-- <i class="fa-solid fa-location-dot"></i> -->
                 </div>
                 <div class="destiny_container">
                     <input type="texte" name="date_R" id="date_R" placeholder="Destination">
-                    <i class="fa-solid fa-location-dot"></i>
+                    <!-- <i class="fa-solid fa-location-dot"></i> -->
                 </div>
                 <div>
                     <button type="submit">Rechercher</button>

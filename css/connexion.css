@@ -1,0 +1,240 @@
+/* Definition des couleur */
+:root{
+    --color-menu:#00AEEF;
+    --color-menu-focus:#72c6f0;
+    --bg-color-menu: #ffffff;
+}
+/* Définition de police */
+
+@font-face {
+    font-family: "GT Eesti";
+    src: url("font/GT-Eesti-Display-Medium-Trial.otf") format("otf");
+    src: url("font/GT-Eesti-Display-UltraBold-Italic-Trial.otf") format("otf");
+    src: url("font/GT-Eesti-Display-Bold-Trial.otf") format("otf");
+}
+
+/* Style général */
+body{
+    background-color: white;
+    margin: 0px;
+    padding: 0px;
+    font-family: "GT Eesti", 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color:var(--bg-color-menu);
+    color: var(--color-menu);
+    border-bottom: var(--color-menu) 2px solid;
+    position: sticky;
+    top:0;
+    z-index: 1000;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50);
+    /*box-shadow: 0 4px rgba(0,0,0,0.1);*/
+}
+
+.header_container{
+    padding: 0px 5px 0px 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header_container h2{
+    padding:0px 0px 0px 5px;
+    
+    font-weight: bold;
+}
+
+.header_container h2 a{
+    text-decoration: none;
+    color: black;
+}
+
+.header_container h2 i{
+    color:var(--color-menu);
+    margin-right: 5px;
+}
+.header_container nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+
+.header_container nav ul li{
+    padding-right: 10px;
+    list-style: none;
+}
+
+.header_container nav ul li a{
+    text-decoration: none;
+    background-color:var(--color-menu);
+    font-weight: bold;
+    border-radius: 10px;
+    padding:6px;
+    color: white;
+    border: var(--color-menu) 2px solid;
+}
+
+.header_container nav ul li a:hover{
+    background-color:white;
+    font-weight: bold;
+    border-radius: 10px;
+    color: var(--color-menu);
+    
+}
+
+.header_container nav ul li a:focus{
+    background-color:var(--color-menu-focus);
+    font-weight: bold;
+    border-radius: 10px;
+    color: white;
+    border: var(--color-menu-focus) 2px solid;
+}
+
+
+footer{
+    margin-top: 20px;
+    text-align: center;
+    background-color:black;
+    padding: 10px;
+}
+
+footer p{
+    color: var(--bg-color-menu);
+    font-weight: bold;
+}
+
+
+.sous{
+    background-image: linear-gradient(rgba(0, 174, 239, 0.7), rgba(255,255,255,0.6)), url(../image/wel2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+
+.inscription_container{
+    
+    background-color: var(--bg-color-menu);
+    text-align: center;
+    width: 40%;
+    margin: 10px auto;
+    /* box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.50); */
+    border-radius: 20px;
+    padding: 30px;
+}
+
+
+.logo i{
+    background-color: var(--color-menu);
+    border-radius: 50%;
+    padding: 20px;
+    color: var(--bg-color-menu);
+    font-size: 2rem;
+}
+
+.inscrire h2{
+    color: var(--color-menu);
+    font-size: 1.8rem;
+    margin-bottom: 0;
+}
+
+.inscrire p{
+    color: rgb(130, 130, 130);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+
+.formulaire{
+    margin-top: 20px;
+    text-align: left;
+}
+
+.mail{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+
+label{
+    font-weight: bold;
+    color:#555;
+}
+
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-menu);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 10px;;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+input:focus{
+    border-color: var(--color-menu-focus);
+    box-shadow: 0px 0px 6px var(--color-menu-focus);
+}
+
+
+button{
+    width: 100%;
+    background-color: var(--color-menu);
+    border: none;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+
+    button a{
+        text-decoration: none;
+        color: white;
+
+    }
+
+
+
+
+button:hover{
+    background-color: var(--color-menu-focus);
+}
+
+
+.formulaire p{
+    margin-top: 10px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.formulaire p a{
+    color: var(--color-menu);
+    text-decoration: none;
+}
+
+.formulaire p a:hover{
+    text-decoration: underline;
+}
+
+
+@media(max-width: 900px){
+    .inscription_container{
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px){
+    .elem{
+        flex-direction: column;
+    }
+}

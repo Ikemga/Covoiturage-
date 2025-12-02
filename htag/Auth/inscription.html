@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faso Covoiturage</title>
+    <!-- Lieaison avec el fichier css -->
+    <link rel="stylesheet" href="../../css/inscription.css">
+
+    <!-- FontAwersome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body class="sous">
+    <header>
+        <div class="header_container">
+            <div class="title_container">
+                <h2>
+                    <i class="fa-solid fa-car-side"></i>
+                    <a href="../index.html">Faso Covoiturage</a>
+                </h2>
+        </div>
+        <nav>
+                <ul>
+                    <li><a href="inscription.html">S'inscrire</a></li>
+                    <li><a href="connexion.html">Se conecter</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div class="inscription_container">
+        <p class="logo">
+            <i class="fa-solid fa-car-side"></i>
+        </p>
+        <div class="inscrire">
+            <h2>Bienvenue sur Fas-Covoiturage</h2>
+            <p>Inscrivez-vous</p>
+        </div>
+        <div class="formulaire">
+            <form action="" method="put">
+                <div class="elem">
+                    <div class="separ">
+                        <label for="">Nom</label> <br>
+                        <input type="text" name="name" id="name" placeholder="SAWADOGO"><br>
+                    </div>
+                    <div>
+                        <label for="">Prénom(s)</label> <br>
+                        <input type="text" name="prenom" id="prenom" placeholder="Charles"><br>
+                    </div>
+                </div>
+
+                <div class="elem">
+                    <div class="separ">
+                        <label for="">Age</label> <br>
+                        <input type="number" name="age" id="age" placeholder="19"><br>
+                    </div>
+                    
+                    <div>
+                        <label for="">Contact</label> <br>
+                        <input type="tel" name="contact" id="contact" placeholder="00 00 00 00"><br>
+                    </div>
+                </div>
+
+                <div class="elem">
+                    <div class="separ">
+                        <label for="">Adresse</label> <br>
+                        <input type="text" name="adresse" id="adresse" placeholder="Zone 1"><br>
+                    </div>
+                
+                    <div>
+                        <label for="">Date</label> <br>
+                        <input type="date" name="date" id="date" placeholder="Date"><br>
+                    </div>
+                </div>
+                
+                <div class="mail">
+                    <label for="">Mail</label> <br>
+                    <input type="mail" name="mail" id="mail" placeholder="exemple@gmail.com" required><br>
+                </div>
+                <div class="elem">
+                    <div class="separ" >
+                        <label for="">Mot de passe</label> <br>
+                        <input type="password" name="pwd" id="pwd" placeholder="Mot de passe" required><br>
+                    </div>
+    
+                    <div>
+                        <label for="">Confirmer mot de passe</label> <br>
+                        <input type="password" name="pwd" id="pwd" placeholder="Confirmer mot de passe" required><br>
+                    </div>
+                </div>
+
+                <button type="submit">Créer Compte</button>
+            </form>
+            <p>Vous avez déja un compte <a href="connexion.html">connectez-vous</a></p>
+        </div>
+    </div>
+    
+    <footer>
+        <p>@ 2025 Faso-Covoiturage. Tous droits réservé @</p>
+    </footer>
+</body>
+</html>
