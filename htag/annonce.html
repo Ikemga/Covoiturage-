@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faso Covoiturage</title>
+    <!-- Lieaison avec el fichier css -->
+    <link rel="stylesheet" href="../css/annonce.css">
+
+    <!-- Icon de de la plateforme -->
+    <link rel="icon" href="../image/log.png">
+
+    <!-- FontAwersome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="header_container">
+            <div class="title_container">
+                <h2>
+                    <i class="fa-solid fa-car-side"></i>
+                    <a href="welcome.html">Faso Covoiturage</a>
+                </h2>
+                
+            </div>
+            <nav>
+                <ul>
+                    <li>
+                        <!-- <i class="fa-solid fa-plus"></i> -->
+                        <a href="annonce.html">Annonce</a>
+                    </li>
+                    <li>
+                        <!-- <i class="fa-solid fa-car-side"></i> -->
+                        <a href=".html">Mes Trajets</a></button>
+                    </li>
+                    <li>
+                        <!-- <i class="fa-solid fa-user"></i> -->
+                        <a href="user.html">Profil</a>
+                    </li>
+                    <li>
+                        <!-- <i class="fa-solid fa-right-from-bracket"></i> -->
+                        <a href="index.html">logout</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    <div>
+        <div class="search_container">
+            <form action="/search" method="get" role="search">
+                <div class="date_container">
+                    <input type="date" name="date_R" id="date_R" placeholder="Date de depart">
+                </div>
+                <div class="depart_container">
+                    <input type="text" name="date_R" id="date_R" placeholder="Depart">
+                    <!-- <i class="fa-solid fa-location-dot"></i> -->
+                </div>
+                <div class="destiny_container">
+                    <input type="texte" name="date_R" id="date_R" placeholder="Destination">
+                    <!-- <i class="fa-solid fa-location-dot"></i> -->
+                </div>
+                <div>
+                    <button type="submit">Rechercher</button>
+                </div>
+            </form>
+        </div>
+        <section class="annonce_section">
+            <div class="all_annonce">
+                <h3>Trajets disponibles</h3>
+                <div class="container">
+                    <button class="add" onclick="openPopupAdd()"><i class="fa-solid fa-plus"></i> Publier une annonce</button>
+                </div>
+                <!-- Annonce -->
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve"  onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="annonce">
+                    <!-- Nom du membre -->
+                    <div class="name_container">
+                        <div class="logo_container">
+                            <p>CS</p>
+                        </div>
+                        <p>Charles SAWADOGO</p>
+                    </div>
+                    <div class="detail_container">
+                        <!-- Trajet -->
+                        <div class="lieu_container">
+                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
+                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                        </div>
+                        <!-- horaire et nombre de place -->
+                        <div class="date_container">
+                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
+                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
+                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
+                        </div>
+                        <!-- Contacts -->
+                    </div>
+                    <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <button class="mes" onclick="openPopupsms()"><i class="fa-solid fa-comment-dots"></i></button>
+                    </div>
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve" onclick="openPopup()">Reserver votre place</button>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <!-- popup reserser -->
+                <div class="popup_overlay" id="popupOverlay">
+                    <div class="popup_reservation">
+                        <span class="close_btn" onclick="closePopup()">×</span>
+                        <p>
+                            <i class="fa-solid fa-car-side"></i>
+                        </p>
+                            
+                        <div class="popup_container">
+                            <h2>Reserver votre place</h2>
+                            <div class="lieu_container">
+                                <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                                <img src="../image/fleche.png"><br>
+                                <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
+                            </div>
+                                    
+                            <form action="" method="post">
+                                <div class="nbr">
+                                    <label for="">Nombre de Place</label><br>
+                                    <input  type="number" id="nbr" name="nbr" placeholder="00"><br>
+                                </div>
+                                <textarea id="commentaire" name="commentaire" placeholder="Écrivez votre commentaire ici..."></textarea><br><br>
+                                <div class="bnt">
+                                    <button type="submit">Valider</button>
+                                    <button class="reset" type="reset">Annuler</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- popup de messagerie -->
+
+                <div class="popup_overlay" id="popupsms">
+                    <div class="popup_sms">
+                        <span class="close_btn1" onclick="closePopupsms()">×</span>
+                        <div class="popup_container1">
+                            <div class="name_container">
+                                <div class="logo_container">
+                                    <p>CS</p>
+                                </div>
+                                <p>Charles SAWADOGO</p>
+                            </div >
+                            <hr>
+                            <div class="chat_box">
+
+                            </div>
+                            <div class="input_box">
+                                <form action="" method="post">
+                                    <input type="text" id="sms" name="sms" placeholder="Aa">
+                                    <button type="submit"><img src="../image/send.png" title="Envoyer"></button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Popup Add -->
+
+                <div class="popup_overlay" id="popupAdd">
+                    <div class="popup_Add">
+                        <span class="close_btn2" onclick="closePopupAdd()">×</span>
+                        <div class="popup_container3">
+                            <h2>Publier une annonce</h2>
+                            <p>Renseigner les champs suivant</p>
+                            <hr>
+                            <div class="formulaire_annonce">
+                                <form action="" method="post">
+                                    <div class="elem">
+                                        <div class="separ">
+                                            <label for="">Date</label> <br>
+                                            <input type="date" name="date" id="date"><br>
+                                        </div>
+                                        <div>
+                                            <label for="">Heure</label> <br>
+                                            <input type="heure" name="heure" id="heure" placeholder="10 h 00"><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="elem">
+                                        <div class="separ">
+                                            <label for="">Nombre de place</label> <br>
+                                            <input type="number" name="nbr_place" id="nbr_place" placeholder="5"><br>
+                                        </div>
+                                        
+                                        <div>
+                                            <label for="">Prix</label> <br>
+                                            <input type="number" name="prix" id="prix" placeholder="5000 FCFA"><br>
+                                        </div>
+                                    </div>
+
+                                    <div class="elem">
+                                        <div class="separ">
+                                            <label for="">Lieu de dpart</label> <br>
+                                            <input type="text" name="l_depart" id="l_depart" placeholder="Ouagadougou"><br>
+                                        </div>
+                                    
+                                        <div>
+                                            <label for="">Destination</label> <br>
+                                            <input type="destiny" name="destiny" id="destiny" placeholder="Kaya"><br>
+                                        </div>
+                                    </div>
+                                    <button class="btn_submit" type="submit">Valider</button>
+                                    <button class="btn_annuler" type="submit">Annuler</button>
+                                </form>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </section>
+    </div>
+    
+    <footer>
+        <p>@ 2025 Faso-Covoiturage. Tous droits réservé @</p>
+    </footer>
+
+    <script>
+        function openPopup() {
+            document.getElementById("popupOverlay").style.display = "flex";
+        }
+
+        function closePopup() {
+            document.getElementById("popupOverlay").style.display = "none";
+        }
+
+        <!-- sms -->
+        function openPopupsms() {
+            document.getElementById("popupsms").style.display = "flex";
+        }
+        
+        function closePopupsms() {
+            document.getElementById("popupsms").style.display = "none";
+        }
+
+        function openPopupAdd() {
+            document.getElementById("popupAdd").style.display = "flex";
+        }
+        
+        function closePopupAdd() {
+            document.getElementById("popupAdd").style.display = "none";
+        }
+        
+    </script>
+</body>
+</html>

@@ -64,32 +64,29 @@ header{
 .header_container nav ul li{
     padding-right: 10px;
     list-style: none;
+    margin: 5px;
 }
 
 .header_container nav ul li a{
     text-decoration: none;
-    background-color:var(--color-menu);
     font-weight: bold;
-    border-radius: 10px;
     padding:6px;
-    color: white;
-    border: var(--color-menu) 2px solid;
+    color: var(--color-menu);
 }
 
 .header_container nav ul li a:hover{
-    background-color:white;
-    font-weight: bold;
-    border-radius: 10px;
-    color: var(--color-menu);
-    
+    padding:6px;
+    color: #063e52;
 }
-
 .header_container nav ul li a:focus{
-    background-color:var(--color-menu-focus);
+    color: var(--color-menu-focus);
     font-weight: bold;
-    border-radius: 10px;
-    color: white;
-    border: var(--color-menu-focus) 2px solid;
+}
+ul li i{
+    background-color: var(--bg-color-menu);
+    border: var(--color-menu) 2px solid;
+    border-radius: 50%;
+    padding: 3px;
 }
 
 

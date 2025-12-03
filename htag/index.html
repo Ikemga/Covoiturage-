@@ -5,10 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faso Covoiturage</title>
     <!-- Lieaison avec el fichier css -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="../css/welcome.css">
 
     <!-- Icon de de la plateforme -->
-    <link rel="icon" href="image/log.png">
+    <link rel="icon" href="../image/log.png">
 
     <!-- FontAwersome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
@@ -27,7 +27,7 @@
             <nav>
                 <ul>
                     <li><a href="Auth/inscription.html">S'inscrire</a></li>
-                    <li><a href="Auth/connexion.html">Se conecter</a></li>
+                    <li> <a href="Auth/connexion.html">Se connecter</a></li>
                 </ul>
             </nav>
         </div>
@@ -37,7 +37,6 @@
             <div class="welcome_container">
                 <h2>Voyagez ensemble, économisez et protégez l'environnement</h2>
                 <p class="welcome_p">Trouvez des covoiturages partout au Burkina Faso. Rapide, économique et convivial.</p>
-                <button><a href="inscrire.html">Créer votre compte gratuitement</a></button>
             </div>
         </section>
         
@@ -61,8 +60,10 @@
         </div>
         <section class="annonce_section">
             <div class="all_annonce">
-                <h3>Trajets disponobles</h3>
+                <h3>Trajets disponibles</h3>
+                <!-- Annonce -->
                 <div class="annonce">
+                    <!-- Nom du membre -->
                     <div class="name_container">
                         <div class="logo_container">
                             <p>CS</p>
@@ -70,24 +71,42 @@
                         <p>Charles SAWADOGO</p>
                     </div>
                     <div class="detail_container">
+                        <!-- Trajet -->
                         <div class="lieu_container">
                             <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
                             <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
                         </div>
+                        <!-- horaire et nombre de place -->
                         <div class="date_container">
                             <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
                             <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
                             <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
                         </div>
+                        <!-- Contacts -->
                     </div>
-                    <div class="prix_container">
-                        <label class="prix"><i class="fa-solid fa-money-bill-transfer"></i> 5000 FCFA</label> <br>
-                        <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
-                        <button>connectez-vous pour resever</button>
+                    <!-- <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <label class="mes"><a href=""><i class="fa-solid fa-comment-dots"></a></i></i></label>
+                    </div> -->
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve"><a href="Auth/connexion.html">Conectez-vouz pour réserver</a></button>
+                        </div>
                     </div>
+                    
                 </div>
 
                 <div class="annonce">
+                    <!-- Nom du membre -->
                     <div class="name_container">
                         <div class="logo_container">
                             <p>CS</p>
@@ -95,75 +114,42 @@
                         <p>Charles SAWADOGO</p>
                     </div>
                     <div class="detail_container">
+                        <!-- Trajet -->
                         <div class="lieu_container">
                             <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
+                            <img src="../image/fleche.png"><br>
                             <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
                         </div>
+                        <!-- horaire et nombre de place -->
                         <div class="date_container">
                             <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
                             <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
                             <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
                         </div>
+                        <!-- Contacts -->
                     </div>
-                    <div class="prix_container">
-                        <label class="prix"><i class="fa-solid fa-money-bill-transfer"></i> 5000 FCFA</label> <br>
-                        <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
-                        <button>connectez-vous pour resever</button>
+                    <!-- <div class="contact">
+                        <label class="whatsapp"><a href="https://wa.me/22602170888"><i class="fa-brands fa-whatsapp"></i></a></label>
+                        <label class="telephone"><a href="tel:+22667543291"><i class="fa-solid fa-phone"></i></a></label>
+                        <label class="mail"><a href="mailto:sawadogosakalo@gmail.com"><i class="fa-solid fa-envelope"></i> </a></i></label>
+                        <label class="mes"><a href=""><i class="fa-solid fa-comment-dots"></a></i></i></label>
+                    </div> -->
+                    <!-- Autres informations -->
+                    <div class="other">
+                        <div class="prix_container">
+                            <label class="prix"> 5000 FCFA</label> <br>
+                            <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
+                        </div>
+                        <!-- Discussion -->
+                        <div class="sms">
+                            <button class="reserve"><a href="Auth/connexion.html">Conectez-vouz pour réserver</a></button>
+                        </div>
                     </div>
+                    
                 </div>
 
-                <div class="annonce">
-                    <div class="name_container">
-                        <div class="logo_container">
-                            <p>CS</p>
-                        </div>
-                        <p>Charles SAWADOGO</p>
-                    </div>
-                    <div class="detail_container">
-                        <div class="lieu_container">
-                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
-                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
-                        </div>
-                        <div class="date_container">
-                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
-                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
-                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
-                        </div>
-                    </div>
-                    <div class="prix_container">
-                        <label class="prix"><i class="fa-solid fa-money-bill-transfer"></i> 5000 FCFA</label> <br>
-                        <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
-                        <button>connectez-vous pour resever</button>
-                    </div>
-                </div>
-
-                <div class="annonce">
-                    <div class="name_container">
-                        <div class="logo_container">
-                            <p>CS</p>
-                        </div>
-                        <p>Charles SAWADOGO</p>
-                    </div>
-                    <div class="detail_container">
-                        <div class="lieu_container">
-                            <label class="dep"><i class="fa-solid fa-location-dot"></i> Ouagadougou</label> <br>
-                            <label class="desc"><i class="fa-solid fa-location-dot"></i> Bobo-Dioulasso</label>
-                        </div>
-                        <div class="date_container">
-                            <label class="date"><i class="fa-solid fa-calendar-days"></i> 15 Jan 2025</label>
-                            <label class="date"><i class="fa-regular fa-clock"></i> 08 H 00</label>
-                            <label class="date"><i class="fa-solid fa-user"></i> 3 places</label>
-                        </div>
-                    </div>
-                    <div class="prix_container">
-                        <label class="prix"><i class="fa-solid fa-money-bill-transfer"></i> 5000 FCFA</label> <br>
-                        <label class="pers"><i class="fa-solid fa-user"></i> par personne</label><br>
-                        <button>connectez-vous pour resever</button>
-                    </div>
-                </div>
             </div>
 
-            
         </section>
     </div>
     

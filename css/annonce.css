@@ -74,14 +74,19 @@ header{
     color: var(--color-menu);
 }
 
+
 .header_container nav ul li a:hover{
     padding:6px;
     color: #063e52;
 }
 .header_container nav ul li a:focus{
-    color: var(--color-menu-focus);
+    color: #063e52;
     font-weight: bold;
+    border-bottom: (--color-menu-focus);
 }
+
+
+
 ul li i{
     background-color: var(--bg-color-menu);
     border: var(--color-menu) 2px solid;
@@ -132,6 +137,31 @@ ul li i{
     font-size: 2rem;
     margin: 10px;
     
+}
+
+.container {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.add{
+    background-color: var(--color-menu);
+    width: 100%;
+    color: var(--bg-color-menu);
+    padding: 10px;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    margin: 10px;
+}
+
+.add:hover{
+    background-color: #045c7b;
+}
+
+.add:focus{
+    background-color: #033b50;
 }
 
 .annonce{
@@ -256,7 +286,7 @@ footer p{
     max-width: 900px;
     min-width: 280px;
     width:fit-content;
-    margin: 0 auto;
+    margin: 10px auto;
     box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.40);
     flex-wrap: wrap;
 }
@@ -268,7 +298,6 @@ footer p{
     padding: 10px;
     margin: 2px;
 }
-
 .date_container input:hover{
     background-color: rgb(231, 235, 235);
     border-radius: 10px;
@@ -290,7 +319,6 @@ footer p{
     padding: 10px;
     margin: 2px;
 }
-
 .depart_container input:hover{
     background-color: rgb(231, 235, 235);
     border-radius: 10px;
@@ -312,7 +340,6 @@ footer p{
     padding: 10px;
     margin: 2px;
 }
-
 .destiny_container input:hover{
     background-color: rgb(231, 235, 235);
     border-radius: 10px;
@@ -365,6 +392,11 @@ form button:focus{
 .contact .whatsapp{
     margin-right: 20px;
     color: var(--color-menu);
+}
+
+.contact button{
+    background-color: transparent;
+    border: none;
 }
 
 .contact .whatsapp i{
@@ -456,6 +488,251 @@ form button:focus{
     display: flex;
 }
 
+/* pop up */
+.popup_overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+
+.popup_reservation{
+    background-color: var(--bg-color-menu);
+    width: fit-content;
+    margin: 0 auto;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.40);
+    border-radius: 20px;
+    padding: 20px;
+}
+.popup_container h2{
+    font-weight: bold;
+    color: var(--color-menu);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.popup_container form{
+    margin: 10px;
+    padding: 5px;
+}
+
+form .nbr label{
+    font-weight: bold;
+}
+
+form .nbr input{
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: var(--color-menu) 1px solid;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+
+form .nbr input:focus{
+    outline: none;
+    border: var(--color-menu) 1px solid;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.20);
+
+}
+
+form textarea{
+    width: 80%;
+    margin: 5px;
+    padding: 10px;
+    border: var(--color-menu) 1px solid;
+    border-radius: 10px;
+}
+
+form textarea:focus{
+    outline: none;
+}
+
+.bnt button{
+    background-color: var(--color-menu);
+    border-radius: 10px;
+}
+
+.bnt button:hover{
+    border-radius: 10px;
+    background-color: var(--color-menu-focus);
+}
+.bnt button:focus{
+    border-radius: 10px;
+    background-color: var(--color-menu-focus);
+}
+
+.bnt .reset{
+    background-color: red;
+    border: none;
+    border-radius: 10px;
+}
+
+.bnt .reset:hover{
+    background-color: rgb(232, 35, 35);
+}
+
+.bnt .reset:focus{
+    background-color: rgb(87, 6, 6);
+}
+
+.popup_reservation p i{
+    color: var(--color-menu);
+    padding: 5px;
+    font-weight: bolder;
+    border: 2px var(--color-menu) solid;
+    border-radius: 50%;
+}
+
+
+
+.close_btn1{
+    position: relative;
+    left: 350px;
+    bottom: 5px;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.close_btn{
+    position: relative;
+    left: 165px;
+    bottom: 20px;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 3px;
+}
+
+.close_btn2{
+    position: relative;
+    left: 480px;
+    top: 35px;
+    color: black;
+    font-size: 25px;
+    font-weight: bolder;
+    cursor: pointer;
+    padding: 3px;
+}
+
+
+.popup_sms {
+    background: #fff;
+    width: 380px;
+    max-width: 90%;
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+    position: relative;
+    animation: popupShow 0.25s ease-out;
+}
+
+.name_container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px;
+}
+
+.logo_container p {
+    background: #00AEEF;
+    color: #fff;
+    width: 40px;
+    height: 40px;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    font-size: 18px;
+}
+
+.popup_container1 hr {
+    border: none;
+    height: 1px;
+    background: #ddd;
+    margin: 0 15px;
+}
+
+
+.chat_box {
+    height: 280px;
+    overflow-y: auto;
+    padding: 15px;
+    background: #f7f7f7;
+}
+
+.chat_box::-webkit-scrollbar {
+    width: 6px;
+}
+.chat_box::-webkit-scrollbar-thumb {
+    background: #c7c7c7;
+    border-radius: 3px;
+}
+
+
+.input_box {
+    padding: 12px;
+    background: #fff;
+    border-top: 1px solid #eee;
+}
+
+.input_box form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.input_box input {
+    flex: 1;
+    padding: 10px 15px;
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    outline: none;
+    font-size: 15px;
+}
+
+.input_box button {
+    border: none;
+    background: #00AEEF;
+    border-radius: 50%;
+    width: 42px;
+    height: 42px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.input_box button img {
+    width: 20px;
+}
+
+.input_box button:hover {
+    background: #008cc7;
+    border-radius: 50%;
+}
+.input_box{
+    align-items: center;
+}
+/* Animation popup */
+@keyframes popupShow {
+    from{ transform: scale(0.7); opacity: 0; }
+    to{ transform: scale(1); opacity: 1; }
+}
 /*  Responsive barred de recherche  */
 
 /* Tabmette */
@@ -469,7 +746,139 @@ form button:focus{
 @media (max-width: 600px){
     .search_container form{
         width: 95%;
-        flex-direction: column;    /* Les champs passent en colonne */
+        flex-direction: column;
         gap: 15px;
     }
+}
+/* Popup de add annonce */
+.popup_container3{
+    margin: 10px;
+    background-color: var(--bg-color-menu);
+}
+.formulaire_annonce{
+    margin-top: 20px;
+}
+
+.elem{
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin-bottom: 20px;
+}.elem{
+    margin-right: 20px;
+}
+.separ{
+    margin-right: 20px;
+}
+
+.elem div,.mail {
+    width: 100%;
+    text-align: left;
+}
+
+.mail{
+    margin-right: 20px;
+    margin-bottom: 20px;
+    width: 95%;
+}
+
+
+label{
+    font-weight: bold;
+    color:#555;
+}
+
+
+input{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid var(--color-menu);
+    border-radius: 10px;
+    margin-top: 5px;
+    margin-right: 10px;;
+    font-size: 0.95rem;
+    outline: none;
+    transition: 0.2s ease-in-out;
+}
+
+input:focus{
+    border-color: var(--color-menu-focus);
+    box-shadow: 0px 0px 6px var(--color-menu-focus);
+}
+
+
+.btn_submit{
+    background-color: var(--color-menu);
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_submit:hover{
+    background-color: var(--color-menu-focus);
+    border-radius: 10px;
+    border: none;
+}
+
+.btn_annuler{
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 12px;
+    font-size: 1.1rem;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-top: 15px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn_annuler:hover{
+    background-color: rgb(236, 61, 61);
+    border-radius: 10px;
+    border: none;
+}
+
+
+.formulaire p{
+    margin-top: 10px;
+    font-weight: bold;
+}
+
+.formulaire p a{
+    color: var(--color-menu);
+    text-decoration: none;
+}
+
+.formulaire p a:hover{
+    text-decoration: underline;
+}
+
+
+@media(max-width: 900px){
+    .inscription_container{
+        width: 80%;
+    }
+}
+
+@media(max-width: 600px){
+    .elem{
+        flex-direction: column;
+    }
+}
+
+.popup_container3{
+    background-color: var(--bg-color-menu);
+    width: fit-content;
+    margin: 5px auto;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.40);
+    border-radius: 20px;
+    padding: 10px;
 }
